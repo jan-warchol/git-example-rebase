@@ -1,0 +1,20 @@
+ansi_bg             !!COL!{bg_0}!
+ansi_fg             !!COL!{fg_0}!
+
+ansi_black          !!COL!{bg_1}!
+ansi_red            !!COL!{red    }!
+ansi_green          !!COL!{green  }!
+ansi_yellow         !!COL!{yellow }!
+ansi_blue           !!COL!{blue   }!
+ansi_magenta        !!COL!{magenta}!
+ansi_cyan           !!COL!{cyan   }!
+ansi_white          !!COL!{dim_0}!
+
+ansi_bright_black   !!COL!{bg_2}!
+ansi_bright_red     !!COL!{br_red    }!
+ansi_bright_green   !!COL!{br_green  }!
+ansi_bright_yellow  !!COL!{br_yellow }!
+ansi_bright_blue    !!COL!{br_blue   }!
+ansi_bright_magenta !!COL!{br_magenta}!
+ansi_bright_cyan    !!COL!{br_cyan   }!
+ansi_bright_white   !!COL!{fg_1}!
