@@ -36,8 +36,8 @@ def generate_palette(
     ### MONOTONES
 
     monotones = {
-        "bg": [bg_l, bg_a, bg_b],
-        "fg": [fg_l, fg_a, fg_b],
+        "bg_0": [bg_l, bg_a, bg_b],
+        "fg_0": [fg_l, fg_a, fg_b],
     }
 
     if not monotone_spec:
@@ -45,10 +45,10 @@ def generate_palette(
         # (0 - lightness like in bg, 1 - like in fg)
         # For some reason bright background looks washed out without increased saturation
         monotone_spec = {
-            "bg_bright_1": [1/10,  br_bg_extra_saturation],
-            "bg_bright_2": [1/4,   br_bg_extra_saturation],
-            "fg_dim":      [5/8,   1],
-            "fg_bright":   [1+1/5, 1],
+            "bg_1":  [1/10,  br_bg_extra_saturation],
+            "bg_2":  [1/4,   br_bg_extra_saturation],
+            "dim_0": [5/8,   1],
+            "fg_1":  [1+1/5, 1],
         }
 
     # use weighted average.
@@ -123,7 +123,7 @@ def generate_palette(
 
     # some debug
     acc_bg_dists = [float(abs(accents[color][0]-bg_l)) for color in accents]
-    acc_hi_dists = [float(abs(accents[color][0]-monotones["bg_bright_2"][0])) for color in accents]
+    acc_hi_dists = [float(abs(accents[color][0]-monotones["bg_2"][0])) for color in accents]
 
     print("""Foreground: {}
 Background: {}
@@ -138,14 +138,14 @@ Highlight-accent distance:   min {:.3}, max {:.3}
 Background-accent distance:  min {:.3}, max {:.3}
     """.format(
         fg_l,
-        monotones["bg"][0],
+        monotones["bg_0"][0],
         contrast,
         float(accent_base_l),
         float(accent_base_l - accent_l_spread),
 
-        float(abs(fg_l-monotones["fg_dim"][0])),
-        float(abs(monotones["bg_bright_2"][0]-bg_l)),
-        float(abs(monotones["bg_bright_2"][0]-monotones["fg_dim"][0])),
+        float(abs(fg_l-monotones["dim_0"][0])),
+        float(abs(monotones["bg_2"][0]-bg_l)),
+        float(abs(monotones["bg_2"][0]-monotones["dim_0"][0])),
         min(acc_hi_dists),
         max(acc_hi_dists),
         min(acc_bg_dists),

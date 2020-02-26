@@ -20,9 +20,11 @@ DEFAULT_OUTPUT_DIR = ''
 MARKER_RE = re.compile(r'!!COL(?P<delim>.)(?P<format>.*?)(?P=delim)')
 
 DEFAULT_COLOR_ORDER = [
-    'bg', 'bg_bright_1', 'bg_bright_2', 'fg_dim', 'fg', 'fg_bright',
-    'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'orange', 'violet',
-    'br_red', 'br_green', 'br_yellow', 'br_blue', 'br_magenta', 'br_cyan', 'br_orange', 'br_violet'
+    'bg_0', 'bg_1', 'bg_2',
+    'dim_0',
+    'fg_0', 'fg_1',
+    'red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'violet', 'magenta',
+    'br_red', 'br_orange', 'br_yellow', 'br_green', 'br_cyan', 'br_blue', 'br_violet', 'br_magenta',
 ]
 
 def load_palette_from_module(module_name):
