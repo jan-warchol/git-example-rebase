@@ -43,3 +43,116 @@ Term colors: bg_2 br_red br_green br_yellow br_blue br_magenta br_cyan fg_1
 
 Background: any
 Variant: gui 256 16
+
+# Interface elements {{{
+
+# Group              Foreground    Background    Attributes
+Visual               none          bg_2
+LineNr               dim_0         bg_1
+CursorLineNr         fg_1          none
+CursorColumn         none          bg_1
+CursorLine           none          bg_1
+ToolbarLine          none          bg_2
+ToolbarButton        fg_1          none          reverse
+VertSplit            dim_0         dim_0
+MatchParen           yellow        bg_2          bold
+IncSearch            yellow        none          reverse
+Search               fg_1          none          reverse
+
+# commonly linked groups
+QuickFixLine      -> Search
+StatusLineTerm    -> StatusLine
+StatusLineTermNC  -> StatusLineNC
+# See `:help lCursor`
+lCursor           -> Cursor
+
+# }}}
+
+# Syntax elements {{{
+
+# Group              Foreground    Background    Attributes
+Comment              dim_0         none          italic
+Constant             cyan          none
+String               green         none
+Statement            fg_1          none          bold
+Identifier           none          none
+PreProc              magenta       none
+Special              blue          none          bold
+Type                 blue          none
+Error                red           none          bold
+
+# commonly linked groups
+Function          -> Identifier
+Number            -> Constant
+Boolean           -> Constant
+Character         -> Constant
+Float             -> Constant
+Conditional       -> Statement
+Exception         -> Statement
+Keyword           -> Statement
+Label             -> Statement
+Operator          -> Statement
+Repeat            -> Statement
+Define            -> PreProc
+Include           -> PreProc
+Macro             -> PreProc
+PreCondit         -> PreProc
+SpecialChar       -> Special
+SpecialComment    -> Special
+Debug             -> Special
+Delimiter         -> Special
+Tag               -> Special
+StorageClass      -> Type
+Structure         -> Type
+Typedef           -> Type
+# }}}
+
+
+# Remaining unstyled highlight groups {{{
+
+# Group              Foreground    Background    Attributes
+Normal               none          none
+Terminal             none          none
+ColorColumn          none          none
+Conceal              none          none
+Cursor               none          none
+Directory            none          none
+EndOfBuffer          none          none
+ErrorMsg             none          none
+FoldColumn           none          none
+Folded               none          none
+ModeMsg              none          none
+MoreMsg              none          none
+NonText              none          none
+Pmenu                none          none
+PmenuSbar            none          none
+PmenuSel             none          none
+PmenuThumb           none          none
+Question             none          none
+SignColumn           none          none
+SpecialKey           none          none
+SpellBad             none          none
+SpellCap             none          none
+SpellLocal           none          none
+SpellRare            none          none
+StatusLine           none          none
+StatusLineNC         none          none
+TabLine              none          none
+TabLineFill          none          none
+TabLineSel           none          none
+Title                none          none
+VisualNOS            none          none
+WarningMsg           none          none
+WildMenu             none          none
+
+Ignore               none          none
+Todo                 none          none
+Underlined           none          none
+
+# diffing
+DiffAdd              none          none
+DiffChange           none          none
+DiffDelete           none          none
+DiffText             none          none
+
+# }}}
