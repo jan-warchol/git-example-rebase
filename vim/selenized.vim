@@ -10,9 +10,9 @@ hi Normal       cterm=NONE    ctermfg=NONE ctermbg=NONE
 " interface elements
 hi IncSearch    ctermfg=1    ctermbg=NONE cterm=reverse
 hi Search       ctermfg=NONE ctermbg=NONE cterm=reverse
+hi Visual       ctermfg=NONE ctermbg=8    cterm=NONE
 hi LineNr       ctermfg=7    ctermbg=0
 hi CursorLineNr ctermfg=NONE ctermbg=NONE
-hi Visual       ctermfg=NONE ctermbg=8    cterm=NONE
 hi CursorLine   ctermfg=NONE ctermbg=0    cterm=NONE
 hi CursorColumn ctermfg=NONE ctermbg=0    cterm=NONE
 hi ColorColumn  ctermfg=NONE ctermbg=0    cterm=NONE
