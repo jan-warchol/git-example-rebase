@@ -82,11 +82,11 @@ lCursor           -> Cursor
 
 # Group              Foreground    Background    Attributes
 Comment              dim_0         none          italic
-Constant             br_red        none
+Constant             red           none
 String               green         none
 Statement            yellow        none          bold
-Identifier           magenta       none
-PreProc              blue          none          bold
+Identifier           cyan          none
+PreProc              br_magenta    none
 Special              blue          none
 Type                 green         none
 Error                red           none          bold
