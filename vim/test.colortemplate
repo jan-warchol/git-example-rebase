@@ -1,0 +1,18 @@
+# vim: ft=colortemplate
+Full name:  background and foreground test
+Short name: bg_fg_test
+Author:     JW <jan.warchol@gmail.com>
+
+Background: dark
+
+# Color palette
+Color:      black #000000 ~ Black
+Color:      white #ffffff ~ White
+
+# Highlight group definitions
+Variant:    gui 256 8
+Variant:    gui
+Normal white black
+
+Variant:    256 8
+Normal none none
