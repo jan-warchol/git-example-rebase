@@ -42,8 +42,10 @@ Term colors: bg_2 br_red br_green br_yellow br_blue br_magenta br_cyan fg_1
 
 
 Background: any
-Variant: gui 256 16
+Variant: gui
 
+Normal               fg_0          bg_0
+Variant: 256 16
 Normal               none          none
 
 # Interface elements {{{
